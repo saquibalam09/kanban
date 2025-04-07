@@ -1,0 +1,60 @@
+/* Animation classes */
+.task-card {
+  transition: all 0.3s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+}
+
+.task-card.dragging {
+  opacity: 0.6;
+  transform: scale(1.02);
+}
+
+.column.drag-over {
+  background-color: rgba(226, 232, 240, 0.7);
+}
+
+/* Scrollbar styling */
+.column::-webkit-scrollbar {
+  width: 6px;
+}
+
+.column::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.column::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 10px;
+}
+
+.column::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
+
+/* Column specific colors */
+.text-TODO {
+  color: rgb(49, 130, 206);
+}
+
+.text-IN_PROGRESS {
+  color: rgb(237, 137, 54);
+}
+
+.text-DONE {
+  color: rgb(56, 161, 105);
+}
+
+/* Box shadows */
+.shadow-card {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-card-hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
